@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE preface>
+
+<preface
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="preface">
+<title>正文之前</title>
+
+<section xml:id="purpose"><title>目的</title>
+    <para>本文旨在讲清楚字符编码的在各种不同语言，环境，工具，操作系统等方面的应用。</para>
+</section>
+
+<section xml:id="declaration"><title>声明</title>
+    <para>任何问题、意见、建议等，都欢迎发邮件一起探讨：admin (at) crifan.com。</para>
+</section>
+
+</preface>

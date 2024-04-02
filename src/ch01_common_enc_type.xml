@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="ch01_common_enc_type">
+<title>常见字符编码类型</title>
+<abstract></abstract>
+
+<para>关于常见的字符编码的</para>
+<itemizedlist>
+    <listitem>详尽解释，可以参考：<link xl:href="http://www.crifan.com/files/doc/docbook/char_encoding/release/html/char_encoding.html">字符编码详解</link></listitem>
+    <listitem>精简介绍，可以参考：<link xl:href="http://www.crifan.com/character_encoding_charset_simpile_tutorial/">字符编码简明教程</link></listitem>
+</itemizedlist>
+
+<para>接着再去看下面的介绍，则就很容易理解了：</para>
+<para>目前一些常见的字符编码类型有：</para>
+<orderedlist>
+    <listitem>最常见编码类型：ascii utf8 gbk</listitem>
+    <listitem>其次：gb2312,iso8859-1</listitem>
+    <listitem>再次是其他的编码</listitem>
+</orderedlist>
+<para></para>
+
+</chapter>

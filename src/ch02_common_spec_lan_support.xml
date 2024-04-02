@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="ch02_common_spec_lan_support">
+<title>常见的规范和编程语言中对于字符编码的支持</title>
+<abstract></abstract>
+
+<para>也可以叫做：字符编码在常见规范和语言中的应用</para>
+
+<sect1 xml:id="xml_encoding_declaration"><title>XML的编码声明</title>
+    <para>xml文件中，第一行的内容，就包含了字符编码声明</para>
+    <para>比如：</para>
+    <programlisting language="html">
+<![CDATA[
+<?xml version='1.0' encoding="utf-8"?>
+]]>
+    </programlisting>
+    <para>其中指定了编码类型encoding为UTF-8类型。</para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="json_encoding_declaration"><title>JSON中的字符编码</title>
+    <para>参考：<link xl:href="http://sebug.net/paper/books/dive-into-python3/serializing.html">序列化Python对象 - 深入Python 3</link></para>
+    <para>第三, 字符编码的问题是长期存在的。JSON 用纯文本编码数据, 但是你知道, “不存在纯文本这种东西。” JSON必须以Unicode 编码(UTF-32, UTF-16, 或者默认的, UTF-8)方式存储, RFC 4627的第3节 定义了如何区分使用的是哪种编码。</para>
+    <para>看起来好像说的是：JSON编码必须是Unicode编码？</para>
+    <para>有空再去确认。</para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="html_charset"><title>HTML的charset</title>
+    <para>HTML中是通过charset来声明当前网页所使用的字符编码是何种类型的</para>
+    <para>最常见的比如：</para>
+    <programlisting language="html">
+<![CDATA[
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+]]>
+    </programlisting>
+    <para>其中指定了编码类型charset为UTF-8类型。</para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="python_char_encoding"><title>Python中的字符编码</title>
+    <para>Python 2.x中的str和unicode</para>
+    <para>Python 3.x中的bytes和str</para>
+    <para></para>
+    <para>系统默认编码：sys.defencoding？？？ 是ANSI</para>
+    <para>--&gt;&gt;导致很多人在使用Python时出现编码错误后，结果去想办法修改sys.defencoding的值</para>
+    <para>--&gt;&gt;实际上不应该这么做，而应该是搞清楚自己要处理的python文件的编码是什么，然后加上对应的编码声明</para>
+    <para>详见：</para>
+    <para><link xl:href="http://www.crifan.com/python_string_encoding_declare_encoding_vs_file_real_encoding/">【整理】Python中用encoding声明的文件编码和文件的实际编码之间的关系</link></para>
+    <para><link xl:href="www.crifan.com/python_head_meaning_for_usr_bin_python_coding_utf-8/">【整理】关于Python脚本开头两行的：#!/usr/bin/python和# -*- coding: utf-8 -*-的作用 – 指定文件编码类型</link></para>
+    <para><link xl:href="http://www.crifan.com/summary_python_2_x_common_string_encode_decode_error_reason_and_solution/">【总结】Python 2.x中常见字符编码和解码方面的错误及其解决办法</link></para>
+    <para>更多内容可参考另外一个教程：</para>
+    <para><link xl:href="http://www.crifan.com/files/doc/docbook/python_topic_str_encoding/release/html/python_topic_str_encoding.html">Python专题教程：字符串和字符编码</link></para>
+    <para></para>
+    <para>Python中有个库，专门用来检测字符串是什么编码的。</para>
+    <para>详见：<link xl:href="http://www.crifan.com/resolved_windows_install_the_python_chardet/">【已解决】windows下，安装python的chardet | 在路上</link></para>
+</sect1>
+
+<sect1 xml:id="csharp_char_encoding"><title>C#中的字符编码</title>
+    <para>在用C#进行网页处理时，网络爬虫抓取得到网页的原始字符串后，需要解码才能得到unicode的字符串</para>
+    <para>详见：<link xl:href="http://www.crifan.com/summary_explain_what_is_html_charset_and_common_value_of_gb2312_gbk_utf_8_iso8859_1/">【整理】关于HTML网页源码的字符编码（charset）格式（GB2312，GBK，UTF-8，ISO8859-1等）的解释 | 在路上</link>中的&quot;从原始html中解码为对应的unicode字符串&quot;</para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="java_char_encoding"><title>Java中的字符编码</title>
+    <para>Java中第三方库函数可以用来动态地检测字符的编码类型：</para>
+    <itemizedlist>
+        <listitem><link xl:href="http://code.google.com/p/juniversalchardet/">juniversalchardet</link></listitem>
+        <listitem><link xl:href="http://jchardet.sourceforge.net/">jchardet</link></listitem>
+        <listitem><link xl:href="http://cpdetector.sourceforge.net/">cpdetector</link></listitem>
+        <listitem><link xl:href="http://userguide.icu-project.org/conversion/detection">ICU4J</link></listitem>
+    </itemizedlist>
+    <para>详见：<link xl:href="http://stackoverflow.com/questions/3759356/what-is-the-most-accurate-encoding-detector">java - What is the most accurate encoding detector? - Stack Overflow</link></para>
+    <para></para>
+</sect1>
+
+</chapter>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="ch04_common_os_support">
+<title>常见系统中的对于不同编码的支持</title>
+<abstract></abstract>
+
+<sect1 xml:id="os_windows_charset"><title>Windows系统中的字符编码</title>
+    <para>Windows中系统中的CodePage</para>
+    <para></para>
+    <para>cmd的默认编码是ANSI</para>
+    <para></para>
+</sect1>
+
+</chapter>

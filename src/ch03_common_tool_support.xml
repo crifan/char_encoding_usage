@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="ch03_common_tool_support">
+<title>常见工具中所涉及的字符编码</title>
+<abstract>字符编码在常见软件中的应用</abstract>
+
+<sect1 xml:id="notepad_char_encoding"><title>Notepad中的字符编码</title>
+    <para>notepad 支持不多但也有最基本的。这就是别人拿来演示神奇的保存一个词 联通 打开后显示其他字符的奥秘所在</para>
+    <para>TODO：抽空找到网上流传很广的那个，写一个联还是通，换个编码保持，结果再打开显示出另外一个字的效果</para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="notepad2_char_encoding"><title>Notepad2中的字符编码</title>
+    <para></para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="npp_char_encoding"><title>Notepad++中的字符编码</title>
+    <para>详见：</para>
+    <para><link xl:href="http://www.crifan.com/files/doc/docbook/rec_soft_npp/release/html/rec_soft_npp.html">【crifan推荐】轻量级文本编辑器，Notepad最佳替代品：Notepad++</link>中的：<link xl:href="http://www.crifan.com/files/doc/docbook/rec_soft_npp/release/html/rec_soft_npp.html#npp_func_multi_enc">Notepad++的多种编码支持</link></para>
+    <para></para>
+</sect1>
+
+
+<sect1 xml:id="eclipse_charset"><title>Eclipse中的字符编码</title>
+    <para>Eclipse中的默认的（文件的字符）编码</para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="sublime_char_encoding"><title>Sublime中的字符编码</title>
+    <para>sublime 也可以保存成不同编码，虽然支持的不够多</para>
+    <para>但是对于及时显示当前文件的编码，支持的不是足够好：</para>
+    <para><link xl:href="http://www.crifan.com/how_to_show_current_file_encoding_in_sublime/">【基本解决】Sublime中竟然不能方便地找到哪里可以显示当前文件的编码类型 | 在路上</link></para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="ultraedit_charset"><title>UltraEdit中的字符编码</title>
+    <para></para>
+    <para></para>
+    <para></para>
+</sect1>
+
+</chapter>
